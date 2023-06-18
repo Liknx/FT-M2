@@ -116,7 +116,10 @@
 
 })();
 */
-var EventEmitter = require('./event-emitter')
+
+// var EventEmitter = require('./event-emitter')
+
+import EventEmitter from './event-emitter';
 var whiteboard = new EventEmitter();
 
 // Ultimately, the color of our stroke;
@@ -230,4 +233,6 @@ whiteboard.draw = function (start, end, strokeColor, shouldBroadcast) {
 
 };
 
-module.exports = whiteboard;
+// module.exports = whiteboard;
+
+export default whiteboard;

@@ -30,7 +30,9 @@
 })();
 */
 
-var whiteboard = require('./whiteboard');
+// var whiteboard = require('./whiteboard');
+
+import whiteboard from './whiteboard'
 var io = require('socket.io-client');
 var socket = io(window.location.origin);
 
